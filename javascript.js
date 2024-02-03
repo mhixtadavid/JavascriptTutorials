@@ -41,8 +41,8 @@ const generateFamousQuote = function() {
     }
   ];
 
-  let arrayIndex = Math.random() * Quotes.length;
-  document.getElementById("quote").innerHTML = Quotes[arrayIndex]
+  let arrayIndex = Math.floor(Math.random() * Quotes.length);
+  document.getElementById("quote").innerHTML = Quotes[arrayIndex].quote
 }
 
 window.onload = function() {
